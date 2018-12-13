@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     openjdk-8-jre \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
+RUN npm i -g npm@6.5.0
 RUN npm i -g firebase-tools@6.1.2
 RUN firebase setup:emulators:firestore
 RUN curl -L https://github.com/tcnksm/ghr/releases/download/v0.12.0/ghr_v0.12.0_linux_amd64.tar.gz \
