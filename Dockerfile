@@ -1,4 +1,4 @@
-FROM circleci/node:8.14.0
+FROM circleci/node:8.15.0
 
 USER 0
 RUN apt-get update && apt-get install -y \
